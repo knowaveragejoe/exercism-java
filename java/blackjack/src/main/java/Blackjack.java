@@ -36,12 +36,16 @@ public class Blackjack {
     }
 
     public boolean isBlackjack(String card1, String card2) {
-        return parseCard(card1) + parseCard(card2) == 21;
+        int total = parseCard(card1) + parseCard(card2);
+
+        return total == 21;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        if (isBlackjack && (dealerScore != 10 || dealerScore != 11)) {
+        if (isBlackjack && dealerScore != 10 && dealerScore != 11) {
             return WIN;
+        } else if (!isBlackjack) {
+            return SPLIT;
         } else {
             return STAND;
         }
@@ -68,10 +72,14 @@ public class Blackjack {
     public String firstTurn(String card1, String card2, String dealerCard) {
         int handScore = parseCard(card1) + parseCard(card2);
         int dealerScore = parseCard(dealerCard);
-
+        
+        System.out.println("handScore: " + handScore);
+        System.out.println("dealerScore: " + dealerScore);
         if (20 < handScore) {
+            System.out.println("Calling large hand");
             return largeHand(isBlackjack(card1, card2), dealerScore);
         } else {
+            System.out.println("Calling small hand");
             return smallHand(handScore, dealerScore);
         }
     }
