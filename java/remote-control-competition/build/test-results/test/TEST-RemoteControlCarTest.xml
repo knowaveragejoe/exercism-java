@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RemoteControlCarTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-05-18T19:19:01" hostname="Josephs-Air.fios-router.home" time="0.029">
+  <properties/>
+  <testcase name="experimentalRccIsRemoteControlCar" classname="RemoteControlCarTest" time="0.024"/>
+  <testcase name="ensureCarsAreComparable" classname="RemoteControlCarTest" time="0.001"/>
+  <testcase name="productionCarTravels10UnitsPerDrive" classname="RemoteControlCarTest" time="0.001"/>
+  <testcase name="rankManyCars" classname="RemoteControlCarTest" time="0.002"/>
+  <testcase name="race" classname="RemoteControlCarTest" time="0.0"/>
+  <testcase name="experimentalCarTravels20UnitsPerDrive" classname="RemoteControlCarTest" time="0.0"/>
+  <testcase name="productionRccIsRemoteControlCar" classname="RemoteControlCarTest" time="0.0"/>
+  <testcase name="rankTwoCars" classname="RemoteControlCarTest" time="0.0"/>
+  <system-out><![CDATA[7
+5
+3
+2
+1
+0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
