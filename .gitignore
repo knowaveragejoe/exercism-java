@@ -22,3 +22,5 @@
 *.bin
 *.idx
 *.xml
+*.js
+*.json
